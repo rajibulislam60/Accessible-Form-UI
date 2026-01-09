@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Accessible Form UI</title>
   </head>
-  <body>
+  <body id="container">
     <main>
-      <div>
+      <div class="accessible-form">
         <section>
           <form action="">
             <div>
@@ -30,23 +35,48 @@
             </div>
             <div>
               <label for="password">Enter Password</label>
-              <input
-                id="password"
-                type="password"
-                aria-required="true"
-                placeholder="*********"
-              />
+              <div class="input-wrapper">
+                <input
+                  id="password"
+                  type="password"
+                  aria-required="true"
+                  placeholder="*********"
+                  aria-describedby="password-toggle"
+                />
+                <button
+                  type="button"
+                  class="icon"
+                  id="password-toggle"
+                  aria-label="Show password"
+                  aria-pressed="false"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
             </div>
             <div>
               <label for="confirm-password">Confirm Password</label>
-              <input
-                id="confirm-password"
-                type="password"
-                aria-required="true"
-                placeholder="**********"
-              />
+              <div class="input-wrapper">
+                <input
+                  id="confirm-password"
+                  type="password"
+                  aria-required="true"
+                  placeholder="**********"
+                  aria-describedby="password-toggle"
+                />
+
+                <button
+                  type="button"
+                  class="icon"
+                  id="password-toggle"
+                  aria-label="Show password"
+                  aria-pressed="false"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
             </div>
-            <button type="submit">Update Profile</button>
+            <button class="Btn" type="submit">Update Profile</button>
           </form>
         </section>
         <section>
