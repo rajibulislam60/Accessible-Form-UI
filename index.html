@@ -12,28 +12,54 @@
           <form action="">
             <div>
               <label for="name">Full Name</label>
-              <input type="text" placeholder="What should we call you?" />
+              <input
+                id="name"
+                type="text"
+                aria-required="true"
+                placeholder="What should we call you?"
+              />
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="text" placeholder="john@doe.com" />
+              <input
+                id="email"
+                type="email"
+                aria-required="true"
+                placeholder="john@doe.com"
+              />
             </div>
             <div>
               <label for="password">Enter Password</label>
-              <input type="text" placeholder="*********" />
+              <input
+                id="password"
+                type="password"
+                aria-required="true"
+                placeholder="*********"
+              />
             </div>
             <div>
-              <label for="password">Confirm Password</label>
-              <input type="text" placeholder="**********" />
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                id="confirm-password"
+                type="password"
+                aria-required="true"
+                placeholder="**********"
+              />
             </div>
-            <button>Update Profile</button>
+            <button type="submit">Update Profile</button>
           </form>
         </section>
         <section>
-          <div>
-            <h3>65%</h3>
+          <div
+            role="progressbar"
+            aria-valuenow="65"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-label="Profile completeness is 65 percent"
+          >
+            <strong>65%</strong>
           </div>
-          <strong>Profile Comleteness</strong>
+          <h2 id="progress-heading">Profile Completeness</h2>
           <div>
             <ul>
               <li>Create Account</li>
