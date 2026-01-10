@@ -12,8 +12,8 @@
   </head>
   <body id="container">
     <main>
-      <div class="accessible-form">
-        <section>
+      <div class="accessible">
+        <section class="accessible-form">
           <form action="">
             <div>
               <label for="name">Full Name</label>
@@ -79,22 +79,23 @@
             <button class="Btn" type="submit">Update Profile</button>
           </form>
         </section>
-        <section>
+        <section class="accessible-details">
           <div
             role="progressbar"
             aria-valuenow="65"
             aria-valuemin="0"
             aria-valuemax="100"
             aria-label="Profile completeness is 65 percent"
+            class="percent-area"
           >
             <strong>65%</strong>
           </div>
           <h2 id="progress-heading">Profile Completeness</h2>
-          <div>
+          <div class="progress-list">
             <ul>
-              <li>Create Account</li>
-              <li>Update Roadmap Projects</li>
-              <li>Setup Public Profile</li>
+              <li><del>Create Account</del></li>
+              <li><del>Update Roadmap Projects</del></li>
+              <li><del>Setup Public Profile</del></li>
               <li>Complete your first project</li>
               <li>Invite your Friends</li>
             </ul>
